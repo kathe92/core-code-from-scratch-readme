@@ -32,18 +32,11 @@ In a nutshell, Java is compiled to bytecode, which then goes into the Java VM, w
 
 Algorithm that will be used to convert dollars (USD) to bitcoin (BTC):
 
-START
-
+```START </br>
 WRITE "ADD THE CURRENT BTC PRICE IN USD: "
-
 READ BTC_AMOUNT
-
 WRITE "ADD THE AMOUNT IN USD TO CONVERT TO BTC: "
-
 READ AMOUNT_TO_CONVERT
-
 USD_TO_BTC <-- BTC_AMOUNT * AMOUNT_TO_CONVERT 
-
 PRINT USD_TO_BTC
-
 END
