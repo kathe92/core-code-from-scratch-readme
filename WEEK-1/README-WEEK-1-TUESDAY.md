@@ -1,4 +1,4 @@
-# Week 1
+# Week 1 - Tuesday
 
 
 ## 1. Explanation about "Interpreted And Compiled Programming Languages"
