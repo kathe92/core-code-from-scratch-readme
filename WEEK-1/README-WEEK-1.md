@@ -1,5 +1,6 @@
 # Week 1
 
+
 ## 1. Explanation about "Interpreted And Compiled Programming Languages"
 
 **Compiled Programming Languages:**
@@ -26,3 +27,23 @@ In general, interpreted programs are slower than compiled programs, but are easi
 Java can be considered both a compiled and an interpreted language because its source code is first compiled into a binary byte-code. This byte-code runs on the Java Virtual Machine (JVM), which is usually a software-based interpreter. The use of compiled byte-code allows the interpreter (the virtual machine) to be small and efficient (and nearly as fast as the CPU running native, compiled code). In addition, this byte-code gives Java its portability: it will run on any JVM that is correctly implemented, regardless of computer hardware or software configuration. Most Web browsers (such as Microsoft Internet Explorer or Netscape Communicator) contain a JVM to run Java applets.
 
 In a nutshell, Java is compiled to bytecode, which then goes into the Java VM, which interprets it.
+
+## 3. Pseudocode currency converter
+
+Algorithm that will be used to convert dollars (USD) to bitcoin (BTC):
+
+START
+
+WRITE "ADD THE CURRENT BTC PRICE IN USD: "
+
+READ BTC_AMOUNT
+
+WRITE "ADD THE AMOUNT IN USD TO CONVERT TO BTC: "
+
+READ AMOUNT_TO_CONVERT
+
+USD_TO_BTC <-- BTC_AMOUNT * AMOUNT_TO_CONVERT 
+
+PRINT USD_TO_BTC
+
+END
