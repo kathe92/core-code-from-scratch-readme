@@ -25,8 +25,18 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 ### Valid Spacing
 
 ``` javascript
-
-
+function validSpacing(sentence) {
+  let space = /\s/gi;
+  let word = /[a-z]+/gi;
+  if (sentence.match(space) == null || sentence.length == 0) {
+    return true;
+  } else if (sentence.match(word) == null) {
+    return false;
+  } else if (sentence.match(space).length == sentence.match(word).length - 1) {
+    return true;
+  }
+  return false;
+}
 ```
 
 ### Fake Binary
