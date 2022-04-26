@@ -33,10 +33,18 @@ var countBits = function(n) {
 ### Your Order, Please 
 
 ``` javascript
-function order(words){
-  return words.split(' ').sort(function(a,b){
-    return a.match(/\d/) - b.match(/\d/);
-  }).join(' ');
+function order(words) {
+  let arrayWords = words.split(' ')
+  let result = {}
+  
+  if (words === "") return ""
+
+  arrayWords.forEach(item => {
+    let number = item.match(/\d/g).join('')
+    result[number] = item;
+  })
+
+  return Object.values(result).join(' ');
 }
 ```
 
