@@ -5,6 +5,12 @@
 
 ### Simple Pig Latin 
 
+Description: 
+
+<img width="676" alt="image" src="https://user-images.githubusercontent.com/86013814/166601823-ff151872-6932-4c2b-b264-c25edbf69fb1.png">
+
+Solution:
+
 ``` javascript
 function pigIt(str){
   let marksP = ['!', '¡', '?', '¿', '.', ',', ':', ';'];
@@ -20,6 +26,12 @@ function pigIt(str){
 ```
 
 ### Counting Duplicates
+
+Description:
+
+<img width="669" alt="image" src="https://user-images.githubusercontent.com/86013814/166602636-a21e4fb3-993f-48a5-b8c6-f30a141559e6.png">
+
+Solution:
 
 ``` javascript
 function duplicateCount(text){
@@ -42,6 +54,14 @@ function duplicateCount(text){
 
 
 ### Decode The Morse Code
+
+Description:
+
+<img width="661" alt="image" src="https://user-images.githubusercontent.com/86013814/166603584-973d44ba-6f6c-4190-b0e2-55fa6f0d60fd.png">
+<img width="667" alt="image" src="https://user-images.githubusercontent.com/86013814/166604112-7d52a121-4fdd-41ef-b96d-82d718dc1952.png">
+<img width="665" alt="image" src="https://user-images.githubusercontent.com/86013814/166604223-260ee7c4-9d0f-4ed2-b7a1-18d8787afc0d.png">
+
+Solution:
 
 ``` javascript
 decodeMorse = function(morseCode){
