@@ -5,6 +5,12 @@
 
 ### Who Likes It? 
 
+Description: 
+
+<img width="675" alt="image" src="https://user-images.githubusercontent.com/86013814/166598379-92ddb902-06c9-49da-a326-2cda47a6756c.png">
+
+Solution:
+
 ``` javascript
 function likes(names) {
   let namesArray = names;
@@ -16,6 +22,12 @@ function likes(names) {
 }
 ```
 ### Bit Counting 
+
+Description:
+
+<img width="676" alt="image" src="https://user-images.githubusercontent.com/86013814/166599073-c5c660a3-5409-4d55-a97e-725f18c2ed9e.png">
+
+Solution: 
 
 ``` javascript
 var countBits = function(n) {
@@ -31,6 +43,12 @@ var countBits = function(n) {
 ```
 
 ### Your Order, Please 
+
+Descripcion:
+
+<img width="675" alt="image" src="https://user-images.githubusercontent.com/86013814/166599590-5c7e034d-e003-4ebc-b6df-729f0cf73112.png">
+
+Solution:
 
 ``` javascript
 function order(words) {
