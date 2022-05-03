@@ -5,6 +5,12 @@
 
 ### Fold An Array
 
+Description:
+
+<img width="671" alt="image" src="https://user-images.githubusercontent.com/86013814/166604543-51b76fc4-312f-491b-a5bc-081d1ab9a580.png">
+
+Solution:
+
 ``` javascript
 function foldArray(array, runs)
 {
@@ -25,6 +31,12 @@ function foldArray(array, runs)
 ```
 
 ### Encrypt This! 
+
+Description:
+
+<img width="662" alt="image" src="https://user-images.githubusercontent.com/86013814/166604599-96a6510e-bc98-45ce-8a26-13fb30f0ba96.png">
+
+Solution:
 
 ``` javascript
 function encryptedWord(word) {
