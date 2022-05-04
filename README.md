@@ -6,8 +6,8 @@
 
 ## Weeks:
 
-- [Week 1](https://github.com/kathe92/core-code-from-scratch-readme/tree/main/WEEK-1)
-- [Week 2](https://github.com/kathe92/core-code-from-scratch-readme/tree/main/WEEK-2)
-- [Week 3](https://github.com/kathe92/core-code-from-scratch-readme/tree/main/WEEK-3)
+- [Week 1](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-1/menu.md)
+- [Week 2](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-2/menu.md)
+- [Week 3](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-3/menu.md)
 
 ***By Katherine Perez***
