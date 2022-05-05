@@ -14,7 +14,10 @@ https://www.codewars.com/kata/56a3f08aa9a6cc9b75000023/train/javascript
 Solution:
 
 ``` javascript
-
+function validateUsr(username) {
+  res = /^[a-z0-9_]{4,16}$/.test(username) 
+  return res
+}
 ```
 
 ### Get number from string
@@ -28,5 +31,9 @@ https://www.codewars.com/kata/57a37f3cbb99449513000cd8/train/javascript
 Solution:
 
 ``` javascript
-
+function getNumberFromString(s) {
+  let number = /[^0-9\.]+/g
+  let newstr = s.replace(number, "");
+  return Number(newstr);
+}
 ```
