@@ -7,6 +7,6 @@
 ## Week 4 - Days:
 
 - [Wednesday](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-4/README-WEEK-4-WEDNESDAY.md)
-- [Thursday]()
+- [Thursday](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-4/README-WEEK-4-THURSDAY.md)
 
 ***By Katherine Perez***
