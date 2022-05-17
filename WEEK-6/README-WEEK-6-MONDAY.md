@@ -73,13 +73,22 @@ console.log(accum("ZpglnRxqenU"));
 
 https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/typescript
 
-***Solution:***
+***Solution 1:***
 
 ``` typescript
 export function warnTheSheep(queue: string[]): string {
    const position = queue.reverse().indexOf('wolf');
-   //console.log(position)
    return position === 0 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${ position }! You are about to be eaten by a wolf!`;
+}
+```
+
+***Solution 2:***
+
+``` typescript
+function warnTheSheep(queue: string[]): string {
+   let position = queue.reverse().indexOf('wolf');
+   if (position === 0) return "Pls go away and stop eating my sheep";
+   return "Oi! Sheep number " + position + "! You are about to be eaten by a wolf!";
 }
 ```
 
