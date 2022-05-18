@@ -15,7 +15,20 @@ https://www.codewars.com/kata/564057bc348c7200bd0000ff/train/typescript
 ***Solution:***
 
 ``` typescript
-
+export function thirt(n: number): number {
+  const arr = [1,10,9,12,3,4]
+  while (n >= 100){
+    let sum:number = 0
+    let test:number = n
+    let i: number = 0
+    while (test != 0){
+      sum += (test%10) * arr[i++%6]
+      test = Math.floor(test / 10)
+    }
+    n = sum
+  }
+  return n
+}
 ```
 
 ### Playing With Digits
@@ -29,7 +42,21 @@ https://www.codewars.com/kata/5552101f47fc5178b1000050/train/typescript
 ***Solution:***
 
 ``` typescript
+export class G964 {
 
+    public static digPow = (n: number, p: number) => {
+      let nToString: string = n.toString();
+      let result: number = 0;
+      for(let i = 0; i < nToString.length ; i++) {
+          let numberser = parseInt(nToString.charAt(i),10);
+          result +=  Math.pow(numberser, p + i)
+          }
+          let compare = Math.pow(n,p);
+          if (result === compare) return p;
+          else if (result % n === 0) return result / n;
+          return -1  
+    }
+}
 ```
 
 ### Valid Braces
@@ -43,7 +70,24 @@ https://www.codewars.com/kata/5277c8a221e209d3f6000b56/train/typescript
 ***Solution:***
 
 ``` typescript
-
+export function validBraces(braces: string): boolean {
+  let search:string [] = []
+  for(let i:number = 0; i < braces.length; i++){
+    if ( braces[i] === "(" || braces[i] === "{" || braces[i] === "["){ //compara con el primer brace introducido en el string
+      search.push(braces[i]) //inserta el valor en el array search
+    } else {
+      if(search.length === 0) return false
+      let lastValue = search[search.length-1]//Busca el valor guardado en el array search (tamano 1 - 1 para obtener posicion)
+      if( (braces[i] === ']' && lastValue === '[') || (braces[i] === '}' && lastValue === '{') || (braces[i] === ')' && lastValue === '('))
+      {
+        search.pop() //si coincide con el que abre elimina el valor guardado en el array
+      } else {
+        break;//sino se rompe el ciclo
+      }
+    }
+  }
+  return search.length === 0
+}
 ```
 
 ### Tic-Tac-Toe
