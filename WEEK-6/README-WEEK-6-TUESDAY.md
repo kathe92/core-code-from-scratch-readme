@@ -16,13 +16,13 @@ https://www.codewars.com/kata/564057bc348c7200bd0000ff/train/typescript
 
 ``` typescript
 export function thirt(n: number): number {
-  const arr = [1,10,9,12,3,4]
+  const arr = [1, 10, 9, 12, 3, 4]
   while (n >= 100){
     let sum:number = 0
     let test:number = n
     let i: number = 0
     while (test != 0){
-      sum += (test%10) * arr[i++%6]
+      sum += (test % 10) * arr[i++ % 6]
       test = Math.floor(test / 10)
     }
     n = sum
