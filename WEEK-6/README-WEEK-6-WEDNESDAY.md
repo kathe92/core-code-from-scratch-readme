@@ -58,7 +58,20 @@ https://www.codewars.com/kata/550554fd08b86f84fe000a58/train/typescript
 ***Solution:***
 
 ``` typescript
-
+export class G964 {
+  public static inArray(a1: string[], a2: string[]): string[] {
+    let result:string [] = [];
+    for (let j:number = 0; j < a1.length; j++) {
+        for (let i:number = 0; i < a2.length; i++) {
+            if ( a2[i].includes(a1[j]) ) {
+                result.push(a1[j]);
+                break;
+            }
+        }
+    }
+    return result.sort();
+  }
+}
 ```
 
 ### Sums Of Parts
