@@ -31,6 +31,25 @@ export class Main {
     const W = new Tile('W', '50'); // This should show and error
   }
 }
+
+export class Tile {
+  letter: string;
+  value: number;
+
+  constructor(letter: string, value: number) {
+    this.letter = letter;
+    this.value = value;
+  }
+
+  printTile() {
+    console.log(`
+        ===========================
+          Letter is: ${this.letter}
+          Value is: ${this.value}
+        ===========================
+    `);
+  }
+}
 ```
 
 ### Time
@@ -46,18 +65,46 @@ You have been hired by a brand of digital watches to be able to create the funct
 ***Solution:***
 
 ``` typescript
-import { Tile } from './Tile';
+import { Time } from './Time';
 export class Main {
   start() {
-    const A = new Tile('A', 10);
-    A.printTile(); // Example of a reader-friendly format above
+    const t = new Time(10, 45, 1);
+    t.printTime(); // Example of a reader-friendly format above
     /*
       ==================
-        Letter: A
-        Value: 10
+        Hours: 10
+        Minutes: 45
+        Seconds: 1
       ==================
     */
-    const W = new Tile('W', '50'); // This should show and error
+    console.log(t.getInSeconds()); // 38701
+  }
+}
+
+export class Time {
+  hour: number;
+  minute: number;
+  second: number;
+
+  constructor(hour: number, minute: number, second: number) {
+    this.hour = hour;
+    this.minute = minute;
+    this.second = second;
+  }
+
+  printTime() {
+    console.log(`
+        ===========================
+          Hours: ${this.hour}
+          Minutes: ${this.minute}
+          Seconds: ${this.second}
+        ===========================
+    `);
+  }
+
+  getInSeconds() :number{
+    const minutes = this.hour * 60 + this.minute;
+    return minutes * 60 + this.second;
   }
 }
 ```
@@ -90,5 +137,40 @@ export class Main {
     r1.reduce();
     r1.printRational(); // 10 / 3
   }
+}
+
+export class Rational {
+  numerator: number;
+  denominator: number;
+
+  constructor(numerator: number, denominator: number) {
+    this.numerator = numerator;
+    this.denominator = denominator;
+  }
+
+  printRational() {
+    console.log(`${this.numerator} / ${this.denominator}`);
+  }
+
+  toFloat():number{
+    return this.numerator / this.denominator;
+
+  }
+
+  gcd(numerator: number, denominator: number): number {
+    if (denominator == 0) return numerator;
+    return this.gcd(denominator, numerator % denominator);
+  }
+
+  reduce() {
+    const gcd = this.gcd(this.numerator, this.denominator);
+    this.numerator = this.numerator / gcd;
+    this.denominator = this.denominator / gcd;
+  }
+    
+  invert() {
+    [this.numerator, this.denominator] = [this.denominator, this.numerator]
+  }
+
 }
 ```
