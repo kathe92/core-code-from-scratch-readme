@@ -101,7 +101,120 @@ https://www.codewars.com/kata/5216a87cbf53a9c30f0000dc/train/javascript
 ***Solution:***
 
 ``` javascript
+const validSpotsInBoard = new Map([
+  [
+    0,
+    [
+      [3, 6],
+      [1, 2],
+      [4, 8],
+    ],
+  ],
+  [
+    1,
+    [
+      [0, 2],
+      [4, 7],
+    ],
+  ],
+  [
+    2,
+    [
+      [0, 1],
+      [6, 4],
+      [5, 8],
+    ],
+  ],
+  [
+    3,
+    [
+      [0, 6],
+      [4, 5],
+    ],
+  ],
+  [
+    4,
+    [
+      [0, 8],
+      [6, 2],
+      [1, 7],
+      [3, 5],
+    ],
+  ],
+  [
+    5,
+    [
+      [2, 8],
+      [3, 4],
+    ],
+  ],
+  [
+    6,
+    [
+      [0, 3],
+      [7, 8],
+      [4, 2],
+    ],
+  ],
+  [
+    7,
+    [
+      [6, 8],
+      [1, 4],
+    ],
+  ],
+  [
+    8,
+    [
+      [0, 4],
+      [6, 7],
+      [2, 5],
+    ],
+  ],
+]);
 
+const getIndexOfEmpy = (array, indexOne, indexTwo) => {
+  if (array[indexOne] === '') return indexOne;
+  return indexTwo;
+};
+
+const areValidSpots = (array, indexOne, indexTwo) => {
+  return array[indexOne] !== 'O' && array[indexTwo] !== 'O';
+};
+
+const isWinSpot = (array, indexOne, indexTwo) => {
+  if (array[indexOne] === 'X' && array[indexTwo] === '') return true;
+  if (array[indexOne] === '' && array[indexTwo] === 'X') return true;
+  return false;
+};
+
+const getWinIndex = (array, validSpots) => {
+  for (let i = 0; i < validSpots.length; i++) {
+    if (isWinSpot(array, ...validSpots[i]))
+      return getIndexOfEmpy(array, ...validSpots[i]);
+  }
+  return -1;
+};
+
+function solveTTT(board) {
+  const countX = board.filter((x) => x === 'X').length; //Filtrar todas las x
+  if (countX == 1) return board.indexOf('');
+  let xIndex = board.indexOf('X');
+  let verifySpots = [];
+  let validSpots = [];
+  while (xIndex != -1) {
+    verifySpots = validSpotsInBoard.get(xIndex);
+    xIndex = board.indexOf('X', xIndex + 1);
+    verifySpots.forEach((spot) => {
+      if (areValidSpots(board, ...spot)) {
+        validSpots.push(spot);
+      }
+    });
+  }
+  let winIndex = getWinIndex(board, validSpots);
+  if (winIndex == -1) return getIndexOfEmpy(board, ...validSpots[0]);
+  return winIndex;
+}
 ```
 
 ### Tic-Tac-Toe-Like Table Generator
