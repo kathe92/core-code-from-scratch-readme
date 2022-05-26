@@ -19,4 +19,5 @@ https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/techno
 
 ### Link
 
+https://github.com/kathe92/core-code-from-scratch-readme/tree/main/WEEK-7/Exercise%202
 
