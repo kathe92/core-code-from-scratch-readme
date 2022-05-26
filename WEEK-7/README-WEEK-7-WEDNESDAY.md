@@ -14,12 +14,23 @@ https://www.codewars.com/kata/576757b1df89ecf5bd00073b/train/typescript
 ***Solution:***
 
 ``` typescript
-
+export const towerBuilder = (nFloors: number): string[] => {
+  if (nFloors === 1) return ['*'];
+  let finalTower: string[] = [];
+  for (let i = 1; i <= nFloors; i++) {
+    finalTower.push(
+      `${' '.repeat(nFloors - i)}${'*'.repeat(2 * i - 1)}${' '.repeat(
+        nFloors - i
+      )}`
+    );
+  }
+  return finalTower;
+};
 ```
 
 
 
-### Build Tower
+### Meeting
 
 ***Description:***
 
@@ -30,5 +41,22 @@ https://www.codewars.com/kata/59df2f8f08c6cec835000012/train/typescript
 ***Solution:***
 
 ``` typescript
-
+export function meeting(s: string): string {
+  return s
+    .toUpperCase()
+    .split(';')
+    .sort((firstName: string, secondName: string) => {
+      const [aFirstName, aLastName] = firstName.split(':');
+      const [bFirstName, bLastName] = secondName.split(':');
+      if (aLastName === bLastName) {
+        return aFirstName > bFirstName ? 1 : bFirstName > aFirstName ? -1 : 0;
+      }
+      return aLastName > bLastName ? 1 : bLastName > aLastName ? -1 : 0;
+    })
+    .map((fullName: string) => {
+      const [firstName, lastName] = fullName.split(':');
+      return `(${lastName}, ${firstName})`;
+    })
+    .join('');
+}
 ```
