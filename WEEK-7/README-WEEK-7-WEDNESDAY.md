@@ -3,6 +3,10 @@
 
 ## Exercises
 
+https://docs.microsoft.com/en-us/learn/modules/typescript-implement-interfaces/
+
+<img width="1393" alt="image" src="https://user-images.githubusercontent.com/86013814/170609523-33b801d9-ecec-41ef-a666-2f4830e06a60.png">
+
 ### Build Tower
 
 ***Description:***
