@@ -12,5 +12,7 @@
 - [Week 4](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-4/menu.md)
 - [Week 5](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-5/menu.md)
 - [Week 6](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-6/menu.md)
+- [Week 7](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-7/menu.md)
+- [Week 8](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-8/menu.md)
 
 ***By Katherine Perez***
