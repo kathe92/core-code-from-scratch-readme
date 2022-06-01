@@ -117,3 +117,119 @@ console.log(myLoan);
 
 https://docs.microsoft.com/en-us/learn/modules/typescript-declare-instantiate-classes/
 
+<img width="631" alt="image" src="https://user-images.githubusercontent.com/86013814/171520202-1c9fcd9a-3630-485f-b01c-44d256b3e409.png">
+
+
+```typescript
+class Car {
+    // Properties
+    _make: string;
+    _color: string;
+    _doors: number;
+    private static numberOfCars: number = 0;  // New static property
+
+    // Constructor
+    constructor(make: string, color: string, doors = 4) {
+        this._make = make;
+        this._color = color;
+        this._doors = doors;
+        Car.numberOfCars++; // Increments the value of the static property
+    }
+
+    // Accessors
+    get make() {
+        return this._make;
+    }
+
+    set make(make) {
+        this._make = make;
+    }
+
+    get color() {
+        return 'The color of the car is ' + this._color;
+    }
+
+    set color(color) {
+        this._color = color;
+    }
+
+    get doors() {
+        return this._doors;
+    }
+
+    set doors(doors) {
+        if ((doors % 2) === 0) {
+            this._doors = doors;
+        } else {
+            throw new Error('Doors must be an even number');
+        }
+    }
+
+    // Methods
+    accelerate(speed: number): string {
+        return `${this.worker()} is accelerating to ${speed} MPH.`
+    }
+    
+    brake(): string {
+        return `${this.worker()} is braking with the standard braking system.`
+    }
+    
+    turn(direction: 'left' | 'right'): string {
+        return `${this.worker()} is turning ${direction}`;  
+    }
+
+    // This function performs work for the other method functions
+    worker(): string {
+        return this._make;
+    }
+
+    public static getNumberOfCars(): number {
+        return Car.numberOfCars;
+    }
+}
+
+
+//let myCar1 = new Car('Cool Car Company', 'blue', 2);
+// Instantiates the Car object with all parameters
+//let myCar2 = new Car('Galaxy Motors', 'blue', 2);
+// Returns 2
+//console.log(Car.getNumberOfCars());
+
+class ElectricCar extends Car {
+    // Properties unique to ElectricCar
+    private _range: number;
+    
+    // Constructor
+    constructor(make: string, color: string, range: number, doors = 2) {
+        super(make, color, doors);
+        this._range = range;
+    }
+
+    // Accessors
+    get range() {
+        return this._range;
+    }
+    set range(range) {
+        this._range = range;
+    }
+
+    // Methods
+    charge() {
+        console.log(this.worker() + " is charging.")
+    }
+
+    // Overrides the brake method of the Car class
+    brake(): string {
+        return `${this.worker()} is braking with the regenerative braking system.`
+    }
+}
+
+let spark = new ElectricCar('Spark Motors','silver', 124, 2);
+let eCar = new ElectricCar('Electric Car Co.', 'black', 263);
+console.log(eCar.doors);         // returns the default, 2
+spark.charge();                  // returns "Spark Motors is charging"
+console.log(spark.brake());  // returns "Spark Motors is braking with the regenerative braking system"
+```
+
+
+
