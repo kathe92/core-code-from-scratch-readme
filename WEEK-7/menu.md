@@ -9,6 +9,5 @@
 - [Monday](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-7/README-WEEK-7-MONDAY.md)
 - [Tuesday](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-7/README-WEEK-7-TUESDAY.md)
 - [Wednesday](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-7/README-WEEK-7-WEDNESDAY.md)
-- [Thursday](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-7/README-WEEK-7-THURSDAY.md)
 
 ***By Katherine Perez***
