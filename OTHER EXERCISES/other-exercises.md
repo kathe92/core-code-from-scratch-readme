@@ -52,8 +52,29 @@ const numbers = num1.concat(num2, num3);
 console.log(numbers);
 ```
 
-### 
+### Factorial
 
 ``` javascript
+function factorial (n) {
+	var total = 1; 
+	for (i=1; i<=n; i++) {
+		total = total * i; 
+	}
+	return total; 
+}
+```
 
+### Filter Duplicates
+
+``` javascript
+function filterDuplicates(data){
+    let uniqueNumbers = [];
+    data.forEach((element) => {
+      if (!uniqueNumbers.includes(element)) {
+          uniqueNumbers.push(element);
+      }
+    });
+    //console.log(uniqueNumbers);
+    return uniqueNumbers;
+  }
 ```
