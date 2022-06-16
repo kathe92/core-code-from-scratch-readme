@@ -94,7 +94,7 @@ Node.js includes three types of modules:
 ## Node.JS Module System - Practice
 
 ***Link***: 
-
+https://github.com/kathe92/core-code-from-scratch-readme/tree/main/WEEK-10/Week%2010
 
 ## Client-Server Model
 
