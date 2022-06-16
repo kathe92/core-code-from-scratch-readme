@@ -18,7 +18,8 @@ Welcome 🙋‍♂️🙋‍♀️, my name is Katherine Perez. I'm From Nicarag
 - [Week 6](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-6/menu.md)
 - [Week 7](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-7/menu.md)
 - [Week 8](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-8/menu.md)
-- [Week 9](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-9/menu.md)
+- [Week 9] Pause Days
 - [Week 10](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-10/menu.md)
+- [Week 11](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-11/menu.md)
 
 ***By Katherine Perez***
