@@ -123,3 +123,10 @@ REST, SOAP, and GraphQL
 ### Is there an alternative to Postman?
 
 Swagger UI, Insomnia REST Client, Paw, Apigee, and cURL are the most popular alternatives and competitors to Postman.
+
+## Express.JS Core Understanding
+
+<img width="940" alt="image" src="https://user-images.githubusercontent.com/86013814/174209137-4625bbfc-9ffe-4f43-a171-c04bb3674d07.png">
+
+<img width="1510" alt="image" src="https://user-images.githubusercontent.com/86013814/174209228-02b5f19f-3b9e-4262-8ebc-74763096c54e.png">
+
