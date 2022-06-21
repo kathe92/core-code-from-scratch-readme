@@ -15,4 +15,22 @@ https://github.com/kathe92/core-code-from-scratch-readme/tree/main/WEEK-11/Exerc
 
 ## Delayed Response API ⏳:
 
-***Link***: 
+***Response***: 
+
+```javascript
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/api/delay/:delay', (req, res) => {
+    const delay = req.params.delay
+    setTimeout(function() {
+        res.send('Its a delay');
+    },delay);
+})
+
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+})
+```
