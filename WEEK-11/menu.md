@@ -4,7 +4,7 @@
 
 ## SOFWARE DEVELOPMENT FROM SCRATCH
 
-## Week 10 - Days:
+## Week 11 - Days:
 
 - [Monday](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-11/README-WEEK-11-MONDAY.md)
 - [Wednesday](https://github.com/kathe92/core-code-from-scratch-readme/blob/main/WEEK-11/README-WEEK-11-WEDNESDAY.md)
